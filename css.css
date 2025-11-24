@@ -1,0 +1,88 @@
+
+:root {
+  --azul: #004aad;
+  --gris-fondo: #f4f6f8;
+  --blanco: #fff;
+  --texto: #333;
+  --sombra: rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--gris-fondo);
+  color: var(--texto);
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background: var(--azul);
+  color: var(--blanco);
+  padding: 25px;
+  box-shadow: 0 2px 10px var(--sombra);
+}
+
+.cabecera .foto {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.cabecera a {
+  color: #aee3ff;
+  text-decoration: none;
+}
+
+.cabecera a:hover {
+  text-decoration: underline;
+}
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+
+.card {
+  background: var(--blanco);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px var(--sombra);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+  color: var(--azul);
+  border-bottom: 2px solid var(--azul);
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+
+.pie {
+  background: var(--azul);
+  color: var(--blanco);
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  box-shadow: 0 -2px 8px var(--sombra);
+}
